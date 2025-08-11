@@ -1,3 +1,4 @@
+//MOST IMPORTANT FILE IN THE FOLDER, USED TO RENDER EVREYTHING THE APP NEEDS
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
