@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Nav />
-      <Intro1 />
+      <Intro1 color = "purple"/>
       <Intro2 />
       <Intro3 />
       <Footer />
