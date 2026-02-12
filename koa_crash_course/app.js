@@ -16,6 +16,7 @@ const things = ["coding", "food", "music"];
 // app.use(async ctx => ctx.body = {msg: "hello world"});
 
 //render
+//server side rendering = older version of react, angular, etc. render html on the server and send it to the client. good for seo and performance but not as dynamic
 render(app, {
     root: path.join(__dirname, "views"),
     layout: "layout",
@@ -23,6 +24,9 @@ render(app, {
     cache: false,
     debug: false
 })
+
+
+//api + frontend way would be to return only the data and front end builds ui
 
 //index page route
 router.get("/",async ctx => {
