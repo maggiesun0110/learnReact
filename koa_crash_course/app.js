@@ -8,6 +8,9 @@ const render = require("koa-ejs");
 
 const router = new koaRouter();
 
+//reaplce with db
+const things = ["coding", "food", "music"];
+
 //middleware = for every incoming req, run this function so everytime someone hits server, it runs no matter the route
 //ctx = request info, response info, headers, body, status code, params, etc
 // app.use(async ctx => ctx.body = {msg: "hello world"});
@@ -24,7 +27,8 @@ render(app, {
 //index page route
 router.get("/",async ctx => {
     await ctx.render("index", {
-        title: "hello world"
+        title: "things i love",
+        things: things
     })
 })
 
